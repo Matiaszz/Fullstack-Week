@@ -2,7 +2,6 @@ import { UserButton } from "@clerk/nextjs";
 // import { Button } from "./_components/ui/button";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-
 const Home = async () => {
   const { userId } = await auth();
   console.log("userid", userId);
